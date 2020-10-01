@@ -139,6 +139,7 @@ class OneHeaderL extends StatelessWidget {
                     width: 150,
                     height: 50,
                   )),
+
               GestureDetector(
                   onTap: () {
                     launchURL(playStoreUrl);
@@ -625,7 +626,7 @@ class _FeatureSliderState extends State<FeatureSlider> {
         children: <Widget>[
           SizedBox(height: 50,),
           Text(
-            "Feature Rich. No bloat.",
+            "Feature Rich Apps",
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 25,
@@ -636,7 +637,7 @@ class _FeatureSliderState extends State<FeatureSlider> {
             height: 8,
           ),
           Text(
-            "Donec sit eget metus odio. Aliqua dolor metus in tincidunt condimentum.",
+            "3 apps (Guest app, Host app, Partner app).",
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300),
           ),
