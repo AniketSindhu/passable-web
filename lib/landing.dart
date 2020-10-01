@@ -2,6 +2,7 @@ import 'package:applandingpage/data/general_data.dart';
 import 'package:applandingpage/model/app_feature_model.dart';
 import 'package:applandingpage/model/feature_tile_model.dart';
 import 'package:applandingpage/others/responsive_widget.dart';
+import 'package:applandingpage/privacy.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -23,8 +24,8 @@ class _LandingPageState extends State<LandingPage> {
               SecondHeader(),
               AppFeaturesList(),
               FeatureSlider(),
-              WatchVideo(),
-              Bottom(),
+              //WatchVideo(),
+              //Bottom(),
               BelowBottom(),
               Footer()
           ],
@@ -626,7 +627,7 @@ class _FeatureSliderState extends State<FeatureSlider> {
         children: <Widget>[
           SizedBox(height: 50,),
           Text(
-            "Feature Rich Apps",
+            "Feature Rich App",
             textAlign: TextAlign.center,
             style: TextStyle(
                 fontSize: 25,
@@ -637,7 +638,7 @@ class _FeatureSliderState extends State<FeatureSlider> {
             height: 8,
           ),
           Text(
-            "3 apps (Guest app, Host app, Partner app).",
+            "",
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300),
           ),
@@ -821,10 +822,10 @@ class Footer extends StatelessWidget {
         children: <Widget>[
           GestureDetector(
             onTap: (){
-              _launchURL(aboutUsUrl);
+              _launchURL(partnerurl);
             },
             child: Text(
-              "About Us",
+              "Work with us (Partner program)",
               style: TextStyle(
                   fontSize: 13,
                   color: textColor,
@@ -835,7 +836,7 @@ class Footer extends StatelessWidget {
           SizedBox(width: 10,),
           GestureDetector(
             onTap: (){
-              _launchURL(PrivacypolicyUrl);
+              Navigator.of(context).push(MaterialPageRoute(builder: (context){return Privacy();}));
             },
             child: Text(
               "Privacy Policy",
@@ -849,10 +850,9 @@ class Footer extends StatelessWidget {
           SizedBox(width: 10,),
           GestureDetector(
             onTap: (){
-              _launchURL(ContactUsUrl);
             },
             child: Text(
-              "Contact Us",
+              "Contact Us at passableofficial@gmail.com",
               style: TextStyle(
                   fontSize: 13,
                   color: textColor,

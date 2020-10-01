@@ -22,7 +22,7 @@ String coverImage = "coverImage.png";
 String finaCalltoAction = "What are you waiting for? Download today!";
 String youtubeVideoUrl = "https://www.youtube.com/watch?v=PT7vd3G49r4";
 
-String aboutUsUrl = "https://www.linkedin.com/company/69000554/";
+String partnerurl = "https://forms.gle/tV35MUKqGJits8V69";
 String PrivacypolicyUrl = "";
 String ContactUsUrl = "";
 
