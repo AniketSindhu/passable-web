@@ -1,7 +1,6 @@
 {
   "hosting": {
-    "site": "flutterapplandingpage",
-    "public": "build/web",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
