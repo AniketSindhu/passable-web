@@ -15,7 +15,7 @@ String appDescription = "Buy tickets to events, host events with full control ov
 String maintitle = "Create, Publish, and Earn";
 String maindescription = "Create event and earn right away by selling passes to your event";
 
-String closingTitle = "Seprate app for event host";
+String closingTitle = "Separate app for event host";
 String closingDescription = "get all insights of your guests using passable host app. Earning dashboard to keep track of your pass sales. Download now!";
 String coverImage = "coverImage.png";
 
@@ -36,7 +36,7 @@ List<AppFeatureModel> getAppFeatures(){
 
   //1
   appFeatureModel.setImagePath("dashboard.png");
-  appFeatureModel.setFeatureTitle("Seprate app for event host");
+  appFeatureModel.setFeatureTitle("Separate app for event host");
   appFeatureModel.setFeatureDescription("get all insights of your guests using passable host app. Earning dashboard to keep track of your pass sales. Download now!");
   appFeatures.add(appFeatureModel);
 
