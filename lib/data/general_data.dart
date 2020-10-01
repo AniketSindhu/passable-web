@@ -15,14 +15,14 @@ String appDescription = "Buy tickets to events, host events with full control ov
 String maintitle = "Create, Publish, and Earn";
 String maindescription = "Create event and earn right away by selling passes to your event";
 
-String closingTitle = "Making Quiz/Test Was Never This EASY";
-String closingDescription = "so what are you waiting for, Download Now";
+String closingTitle = "Seprate app for event host";
+String closingDescription = "get all insights of your guests using passable host app. Earning dashboard to keep track of your pass sales. Download now!";
 String coverImage = "coverImage.png";
 
 String finaCalltoAction = "What are you waiting for? Download today!";
-String youtubeVideoUrl = "https://www.youtube.com/channel/UCsPdgUIoOBTBI1UmulW1pdw";
+String youtubeVideoUrl = "https://www.youtube.com/watch?v=PT7vd3G49r4";
 
-String aboutUsUrl = "https://www.linkedin.com/in/lamsanskar/";
+String aboutUsUrl = "https://www.linkedin.com/company/69000554/";
 String PrivacypolicyUrl = "";
 String ContactUsUrl = "";
 
@@ -35,25 +35,25 @@ List<AppFeatureModel> getAppFeatures(){
   // setting up the features
 
   //1
-  appFeatureModel.setImagePath("header_screenshot.png");
-  appFeatureModel.setFeatureTitle("Making Test Was Never So Easy");
-  appFeatureModel.setFeatureDescription("So how does an app can make test when people spend hours making one on PC or Laptop, because these .");
+  appFeatureModel.setImagePath("dashboard.png");
+  appFeatureModel.setFeatureTitle("Seprate app for event host");
+  appFeatureModel.setFeatureDescription("get all insights of your guests using passable host app. Earning dashboard to keep track of your pass sales. Download now!");
   appFeatures.add(appFeatureModel);
 
   appFeatureModel = new AppFeatureModel();
 
   //2
-  appFeatureModel.setImagePath("header_screenshot.png");
-  appFeatureModel.setFeatureTitle("Get Detailed Result Analysis");
-  appFeatureModel.setFeatureDescription("Get Detailed analysis of each and every question you attempted with correct answer to check what you did wrong and what you did right.");
+  appFeatureModel.setImagePath("pass.png");
+  appFeatureModel.setFeatureTitle("Unique pass for every booking");
+  appFeatureModel.setFeatureDescription("Scan pass at event gate from your mobile only. Get all info of guest after scanning. Every pass is unique which assures no double entry");
   appFeatures.add(appFeatureModel);
 
   appFeatureModel = new AppFeatureModel();
 
   //3
-  appFeatureModel.setImagePath("header_screenshot.png");
-  appFeatureModel.setFeatureTitle("Make Study Fun With Markszen");
-  appFeatureModel.setFeatureDescription("Student Learn Quicker and Easier when learning is fun.");
+  appFeatureModel.setImagePath("login.png");
+  appFeatureModel.setFeatureTitle("Easy Login");
+  appFeatureModel.setFeatureDescription("Authenticate securely using google authentication or mobile phone.");
   appFeatures.add(appFeatureModel);
 
   appFeatureModel = new AppFeatureModel();

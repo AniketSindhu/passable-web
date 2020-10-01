@@ -139,6 +139,7 @@ class OneHeaderL extends StatelessWidget {
                     width: 150,
                     height: 50,
                   )),
+                  
               GestureDetector(
                   onTap: () {
                     launchURL(playStoreUrl);
