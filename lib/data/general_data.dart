@@ -70,25 +70,25 @@ List<FeatureTileModel> getFeaturesTiles1(){
   FeatureTileModel featureTileModel = new FeatureTileModel();
 
   //1
-  featureTileModel.setImagePath("header_screenshot.png");
-  featureTileModel.setTitle("Create Unlimited Quiz");
-  featureTileModel.setDescription("Markszen Free Plan comes with unlimited quiz create as much quiz you want.");
+  featureTileModel.setImagePath("host_main.png");
+  featureTileModel.setTitle("Manage event using host app");
+  featureTileModel.setDescription("Full control on the event, cusotmize pass price, event details, announce etc.");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();
 
   //2
-  featureTileModel.setImagePath("header_screenshot.png");
-  featureTileModel.setTitle("Shuffle questions answer");
-  featureTileModel.setDescription("Answers of question are shuffled so no cheating allowed");
+  featureTileModel.setImagePath("payment.png");
+  featureTileModel.setTitle("Safe & secured payments");
+  featureTileModel.setDescription("Buy passes using razorpay payment gateway with almost all payment methods.");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();
 
   //3
-  featureTileModel.setImagePath("header_screenshot.png");
-  featureTileModel.setTitle("See Detailed Result Analysis");
-  featureTileModel.setDescription("All student detailed result analysis is generated and student performance is send to Parents instantly");
+  featureTileModel.setImagePath("team.png");
+  featureTileModel.setTitle("Create team for event managment");
+  featureTileModel.setDescription("Team members will be able to make announcements & scan passes");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();
@@ -102,25 +102,25 @@ List<FeatureTileModel> getFeaturesTiles2(){
   FeatureTileModel featureTileModel = new FeatureTileModel();
 
   //4
-  featureTileModel.setImagePath("header_screenshot.png");
-  featureTileModel.setTitle("5 User Categories");
-  featureTileModel.setDescription("Personalized Interface for all use cases, Either its Teacher, Student Parents Or School Admin");
+  featureTileModel.setImagePath("scan.png");
+  featureTileModel.setTitle("Check in guests using your mobile");
+  featureTileModel.setDescription("Check in guests by scanning passes on your mobile. Every pass is unique.");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();
 
   //5
-  featureTileModel.setImagePath("header_screenshot.png");
-  featureTileModel.setTitle("Create Daily Test");
-  featureTileModel.setDescription("Teachers can create daily test to test student performance on a regular basis.");
+  featureTileModel.setImagePath("announce.png");
+  featureTileModel.setTitle("Make announcement for your guests");
+  featureTileModel.setDescription("Announce any change in event or promotion using announcement feature. Everyone who bought the pass for the event will be notified by a notification on their mobile");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();
 
   //6
-  featureTileModel.setImagePath("header_screenshot.png");
-  featureTileModel.setTitle("Guest Mode");
-  featureTileModel.setDescription("No need to create account get quiz code and lets get started, No Login Required!");
+  featureTileModel.setImagePath("feedback.png");
+  featureTileModel.setTitle("Send feedback/ report bugs");
+  featureTileModel.setDescription("In app feedback system for great user expiernce.");
   tileFeatures.add(featureTileModel);
 
   featureTileModel = new FeatureTileModel();
