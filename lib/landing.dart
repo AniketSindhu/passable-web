@@ -203,47 +203,48 @@ class SecondHeader extends StatelessWidget {
   }
 }
 
-class WatchVideo extends StatelessWidget {
 
-  launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(vertical: 150),
-      color: Colors.black87,
-      width: MediaQuery.of(context).size.width,
-      child: GestureDetector(
-        onTap: (){
-          launchURL(youtubeVideoUrl);
-        },
-        child: Column(
-          children: <Widget>[
-            Text(
-              "Watch the video",
-              style: TextStyle(
-                  color: Colors.white, fontSize: 30, fontWeight: FontWeight.w400),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Icon(
-              Icons.play_circle_filled,
-              color: Colors.white,
-              size: 70,
-            )
-          ],
-        ),
-      ),
-    );
-  }
-}
+//class WatchVideo extends StatelessWidget {
+//
+//  launchURL(String url) async {
+//    if (await canLaunch(url)) {
+//      await launch(url);
+//    } else {
+//      throw 'Could not launch $url';
+//    }
+//  }
+//
+//  @override
+//  Widget build(BuildContext context) {
+//    return Container(
+//      padding: EdgeInsets.symmetric(vertical: 150),
+//      color: Colors.black87,
+//      width: MediaQuery.of(context).size.width,
+//      child: GestureDetector(
+//        onTap: (){
+//          launchURL(youtubeVideoUrl);
+//        },
+//        child: Column(
+//          children: <Widget>[
+//            Text(
+//              "Watch the video",
+//              style: TextStyle(
+//                  color: Colors.white, fontSize: 30, fontWeight: FontWeight.w400),
+//            ),
+//            SizedBox(
+//              height: 30,
+//            ),
+//            Icon(
+//              Icons.play_circle_filled,
+//              color: Colors.white,
+//              size: 70,
+//            )
+//          ],
+//        ),
+//      ),
+//    );
+//  }
+//}
 
 
 class StarRating extends StatelessWidget {
@@ -530,7 +531,7 @@ class FeatureTileText extends StatelessWidget {
           horizontal: MediaQuery.of(context).size.width > 700 ? 40 : 20,
           vertical: 20),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
@@ -560,9 +561,50 @@ class FeatureTileText extends StatelessWidget {
           SizedBox(
             height: 16,
           ),
+          title=='Partner Program'?
+          Column(
+            children: [
+              SizedBox(height:25),
+              RaisedButton(
+                elevation: 20,
+                onPressed:(){launch(partnerurl);},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Become A Partner",style: TextStyle(fontSize: 25,color: Colors.white,fontWeight: FontWeight.w400),),
+                ),
+                color: Colors.pink,
+                splashColor: Colors.black,
+              ),
+            ],
+          ):
+          MediaQuery.of(context).size.width > 700?
           Row(
             mainAxisAlignment: MediaQuery.of(context).size.width > 700 ?
             MainAxisAlignment.start: MainAxisAlignment.center,
+            children: <Widget>[
+              GestureDetector(
+                  onTap: () {
+                    launchURL(playStoreUrl);
+                  },
+                  child: Image.asset(
+                    "assets/google_play_button.png",
+                    width: 150,
+                    height: 50,
+                  )),
+              GestureDetector(
+                  onTap: () {
+                    launchURL(playStoreUrl);
+                  },
+                  child: Image.asset(
+                    "assets/app_store_badge.png",
+                    width: 180,
+                    height: 130,
+                  )),
+            ],
+          ):
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               GestureDetector(
                   onTap: () {
@@ -822,20 +864,6 @@ class Footer extends StatelessWidget {
         children: <Widget>[
           GestureDetector(
             onTap: (){
-              _launchURL(partnerurl);
-            },
-            child: Text(
-              "Work with us (Partner program)",
-              style: TextStyle(
-                  fontSize: 13,
-                  color: textColor,
-                  decoration: TextDecoration.underline
-              ),
-            ),
-          ),
-          SizedBox(width: 10,),
-          GestureDetector(
-            onTap: (){
               Navigator.of(context).push(MaterialPageRoute(builder: (context){return Privacy();}));
             },
             child: Text(
@@ -852,11 +880,10 @@ class Footer extends StatelessWidget {
             onTap: (){
             },
             child: Text(
-              "Contact Us at passableofficial@gmail.com",
+              "Contact Us at passable.help@gmail.com",
               style: TextStyle(
                   fontSize: 13,
                   color: textColor,
-                  decoration: TextDecoration.underline
               ),
             ),
           ),

@@ -8,12 +8,10 @@ Color headerColor = Colors.black87;
 
 /// One
 String playStoreUrl =
-    "https://play.google.com/store/apps/details?id=com.aniketsindhu.gamiac";
-String appHeading = "Getting bored?\n
- Download Passable to find something fun nearby";
+    "https://play.google.com/store/apps/developer?id=Passable+Inc.";
+String appHeading = "Getting bored?\nDownload Passable to find something fun nearby";
 String appDescription =
-    "Buy passes to the events worldwide with huge discounts, find clubs/restaurants/pubs anywhere in the Universe or host events with full control over guests with features like scan passes, announcements, specially designed dashboard for earnings and many more!!
-    Download and try Passable Now";
+    "Buy passes to the events worldwide with huge discounts, find clubs/restaurants/pubs anywhere in the Universe or host events with full control over guests with features like scan passes, announcements, specially designed dashboard for earnings and many more!!  Download and try Passable Now";
 
 /// Two
 String maintitle = "Create, Publish, and Earn";
@@ -57,10 +55,10 @@ List<AppFeatureModel> getAppFeatures() {
   appFeatureModel = new AppFeatureModel();
 
   //3
-  appFeatureModel.setImagePath("login.png");
-  appFeatureModel.setFeatureTitle("Easy Login");
+  appFeatureModel.setImagePath("partner.png");
+  appFeatureModel.setFeatureTitle("Partner Program");
   appFeatureModel.setFeatureDescription(
-      "Authenticate securely using google authentication or mobile phone(OTP).");
+      "Become a partner, Bring events and Earn through ticket sales commission.");
   appFeatures.add(appFeatureModel);
 
   appFeatureModel = new AppFeatureModel();
