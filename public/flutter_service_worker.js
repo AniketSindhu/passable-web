@@ -3,10 +3,10 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "f0b30ba1860d55de62d9ad18ec91d783",
-"/": "f0b30ba1860d55de62d9ad18ec91d783",
-"main.dart.js": "2a9a2aac7cd34565b0a568b5848afc7f",
-"assets/AssetManifest.json": "3a1c43b1297727c48f2760377364bd65",
+  "index.html": "6e9139ec91ec499798e96f50a99e3af5",
+"/": "6e9139ec91ec499798e96f50a99e3af5",
+"main.dart.js": "8f10c1afe5e79155ffe8f8fa862993e4",
+"assets/AssetManifest.json": "d8f0c5bc81656ede6c65891c3828914e",
 "assets/NOTICES": "a6c11e6b9b1fc49465f82215e23815a2",
 "assets/FontManifest.json": "de3a5ec6340c657102a308dc6ca2894e",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
@@ -19,6 +19,7 @@ const RESOURCES = {
 "assets/assets/coverImage.png": "d2726be69b95fa80e9450be955b15640",
 "assets/assets/announce.png": "c9b5dd25fb6679c209a3771b2611725f",
 "assets/assets/google_play_button.png": "f3cc4c4560beac398eda0ec85949da4b",
+"assets/assets/partner.png": "4ce340f598ba1740b6e8f296ca01019a",
 "assets/assets/app_store_badge.png": "25fb573ab4c627d7b7602eabb66123ee",
 "assets/assets/payment.png": "f2d67d5d087359fa49efa30345244949",
 "assets/assets/test.png": "1b7c2584ba476e4e0e000efcf6aca260",

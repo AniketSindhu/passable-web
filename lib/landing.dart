@@ -128,8 +128,33 @@ class OneHeaderL extends StatelessWidget {
           SizedBox(
             height: 25,
           ),
+          MediaQuery.of(context).size.width > 700?
           Row(
-            mainAxisAlignment: MediaQuery.of(context).size.width > 700 ? MainAxisAlignment.start : MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              GestureDetector(
+                  onTap: () {
+                    launchURL(playStoreUrl);
+                  },
+                  child: Image.asset(
+                    "assets/google_play_button.png",
+                    width: 150,
+                    height: 50,
+                  )),
+
+              GestureDetector(
+                  onTap: () {
+                    launchURL(playStoreUrl);
+                  },
+                  child: Image.asset(
+                    "assets/app_store_badge.png",
+                    width: 180,
+                    height: 130,
+                  )),
+            ],
+          ):
+         Column(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               GestureDetector(
                   onTap: () {
@@ -351,6 +376,7 @@ class BelowBottom extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
+          MediaQuery.of(context).size.width > 700?
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -363,6 +389,7 @@ class BelowBottom extends StatelessWidget {
                     width: 150,
                     height: 50,
                   )),
+
               GestureDetector(
                   onTap: () {
                     launchURL(playStoreUrl);
@@ -373,7 +400,32 @@ class BelowBottom extends StatelessWidget {
                     height: 130,
                   )),
             ],
-          )
+          ):
+         Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              GestureDetector(
+                  onTap: () {
+                    launchURL(playStoreUrl);
+                  },
+                  child: Image.asset(
+                    "assets/google_play_button.png",
+                    width: 150,
+                    height: 50,
+                  )),
+
+              GestureDetector(
+                  onTap: () {
+                    launchURL(playStoreUrl);
+                  },
+                  child: Image.asset(
+                    "assets/app_store_badge.png",
+                    width: 180,
+                    height: 130,
+                  )),
+            ],
+          ),
         ],
       ),
     );
